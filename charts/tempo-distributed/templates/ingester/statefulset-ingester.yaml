@@ -31,7 +31,7 @@ spec:
   selector:
     matchLabels:
       {{- include "ingester.selectorLabels" $dict | nindent 6}}
-  serviceName: ingester
+  serviceName: tempo-ingester
   podManagementPolicy: Parallel
   updateStrategy:
     {{- if .Values.ingester.zoneAwareReplication.enabled }}
