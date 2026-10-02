@@ -286,7 +286,7 @@ ingester:
     # -- Set unhealthyPodEvictionPolicy for the ingester PodDisruptionBudget. Requires policy/v1.
     unhealthyPodEvictionPolicy: ""
   # -- Override Pod Disruption Budget maxUnavailable with a static value
-  # maxUnavailable: 1
+  maxUnavailable: 1
   # -- Node selector for ingester pods
   nodeSelector: {}
   # -- Tolerations for ingester pods
